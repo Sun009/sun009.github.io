@@ -1,0 +1,851 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+             <link href="Scripts/animations.css" rel="stylesheet" />
+    <link href="styleCss.css" rel="stylesheet" />
+ <!-- Optional theme -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Alegreya+Sans" rel="stylesheet">
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+        html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}  
+        @media (min-height: 768px) {
+    .animated{
+        visibility: hidden;
+    }
+    
+ h3{
+     font-family: 'Fira Sans', sans-serif;
+
+ }
+ h4{
+     font-family: 'Alegreya Sans', sans-serif;
+
+ }
+          .spinner{
+	width: 80px;
+	height: 80px;
+    border: 2px  solid #f3f3f3;
+	border-top:2px solid #f25a41;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	animation: spin 1s infinite linear;
+}
+@keyframes spin{
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+ li a{
+     font-family: 'Fira Sans', sans-serif;
+           font-size:1.2em;
+
+ }
+        #overlay{
+ height: 100%;
+ width: 100%;
+background:rgba(0,0,0,.8);
+opacity:5;
+ position: fixed;
+ left: 0;
+ right: 0;
+}
+        body {
+      position: relative; 
+  }
+        .backgroundImage1{
+ 	 width:100%;
+	 height:320px; 
+        border:3px inset lightgreen;
+        border-radius:8px;
+	 background-size:cover;
+	  background-repeat:no-repeat;
+	  position:relative;
+	  background-position:center; 
+	overflow:hidden;
+} 
+        .navbar .navbar-default .navbar-fixed-top{
+ background-color:green;
+        }
+       .navbar-right .navbar-nav li:active{
+             color:blue;
+             border-top-radius:5px;
+          }
+       .navbar-right .navbar-nav li a:hover{
+             color:blue;
+             border-radius:5px;
+             background-color:whitesmoke;
+         }
+       
+        
+       
+    </style>
+    
+</head>
+<body style="margin:0;padding:0;" >
+    <div id="overlay">
+<div class="spinner"></div>
+</div> 
+    <nav class="navbar navbar-inverse  navbar-fixed-top" >
+       <div class="container">
+         <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mn" >
+            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+             
+        </button>
+           
+            </div>
+ 
+        <div   class="collapse navbar-collapse navbar-right" id="mn">
+            <ul  class="nav navbar-nav text-center">
+                 <li  data-toggle="collapse" data-target=".navbar-collapse" class="active" ><a  href="#Home">Home </a>         
+</li>
+                <li  data-toggle="collapse" data-target=".navbar-collapse"  ><a  href="#res" >Resume</a></li>
+                <li  data-toggle="collapse" data-target=".navbar-collapse"  ><a  href="#About" >Publications</a></li>
+                                <li  data-toggle="collapse" data-target=".navbar-collapse"  ><a   href="#feat">Research Projects</a></li>
+
+                                <li data-toggle="collapse" data-target=".navbar-collapse" ><a href="#exp">Experience</a></li>
+                <li  data-toggle="collapse" data-target=".navbar-collapse"  ><a href="#ach">Achievements</a></li>
+
+                                <li  data-toggle="collapse" data-target=".navbar-collapse"  ><a href="#dd ">Prsentations & Talks</a></li>
+                 <li  data-toggle="collapse" data-target=".navbar-collapse"  ><a  href="#con ">Contact</a></li>
+
+            </ul>
+           
+              
+        </div>
+           </div>
+    </nav>
+     <div id="hd"  class="container-fluid">
+           
+            <div id="Home" style="background-color:#3366FF; margin-top:20px   ; "   class="row">
+                 <div style="bottom:-60px;" class="col-xs-4 ">
+
+                            <img class="img-responsive img-circle "  src="/images/temp.jpg"  style="width:168px;  border:4px outset white;  height:160px; " />
+
+                        </div>
+                <div style="bottom:-20px;  "  class=" col-xs-4  text-center animatedParent    ">
+                    <div  class="animated fadeInUp slow delay-400" style="margin-top:60px ; font-family: 'Fira Sans', sans-serif;
+ font-weight: 500;  font-size:1.4em; color:#fff; ">  Research Scholar IIT Ropar 
+                      <br />Akrati Saxena
+                        <br />
+                    </div>
+                                          <br />
+
+                     
+                        </div>
+                <div style="bottom:-60px;" class="  col-xs-3  col-xs-offset-1">
+                          <img class="img-responsive img-circle"  src="iit.jpg" style="width:168px;  border:4px outset white; height:160px; " />
+
+                        </div>
+            </div>
+        
+      <div style="height:50px;  font-size:1.2em;  background-color:whitesmoke; " class="row animatedParent" >
+          <div    class="col-xs-12 text-center animated fadeInDown slow" style=" font-family: 'Fira Sans', sans-serif;
+ font-weight: 600; -webkit-font-smoothing: subpixel-antialiased;   line-height:50px; color:blue; "> Supervisor:Dr S.R.S Iyengar
+                 </div>
+          </div>
+         </div> 
+    
+ <div style="margin-top:-30px;" class="container">
+        <div class="page-header" id=" ">
+             
+            <div style="  font-weight: 600;" class="row animatedParent">
+                <div    style="background-color:floralwhite;  font-family: Cambria; font-weight: 700; border-radius:6px;   " class="col-md-4 ">
+                 <div style="-webkit-font-smoothing: subpixel-antialiased ;
+  -moz-osx-font-smoothing: grayscale;" class="animated  fadeInLeft slow  " id="c1">
+                      <h3  >Ph.D      &nbsp   <i class="fa fa-graduation-cap"></i>
+</h3>
+                    <h4>Computer Science and Engineering</h4>
+                    <h5>Indian Institute of Technology Ropar, India (from 2014)
+
+</h5>
+                     </div>
+                    <div class="animated fadeInRight slow delay-500">
+
+<h3>B.Tech    &nbsp     <i class="fa fa-graduation-cap"></i>
+</h3>
+                    <h4>Computer Science and Engineering</h4>
+                    <h5>Institute of Engineering and Technology Lucknow, India (2007-2011)</h5>
+ 
+
+ <br />
+</div>
+<h4><a href="#" style="color:darkgreen; font-size:1em; text-decoration:underline ; font-family:'Times New Roman'  text-decoration:underline;">Google Scholar Link</a></h4>
+<h4><a href="#" style="color:darkgreen; font-size:1em; text-decoration:underline; font-family:'Times New Roman' text-decoration:underline;">DBPL Link</a></h4>
+
+                        </div>
+                <div id="c2"   class="col-md-8 col-md-offset-0">
+                  
+     
+       
+            <div class="backgroundImage1"  style="position:relative;">
+                  <div id="imageCarousel" data-ride="carousel" class="carousel slide" data-interval="2200">
+                        <ol class="carousel-indicators " style=" margin-right:-60px; ">
+                            <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                               <li data-target="#imageCarousel" data-slide-to="1"></li>
+                               <li data-target="#imageCarousel" data-slide-to="2"></li>
+                               <li data-target="#imageCarousel" data-slide-to="3"></li>
+                               <li data-target="#imageCarousel" data-slide-to="4"></li>
+                               
+                        </ol>
+                         <div class="carousel-inner">
+                             <div class="item active">
+                                 <img src="images/i1.jpg" style="width:100% ; height:320px ;" class="img-responsive" />
+                                
+ 
+                             </div>
+                              <div class="item">
+                                 <img src="images/i2.jpg" style="width:100% ; height:320px ;" class="img-responsive" />
+                                 
+                         </div>
+                              <div class="item">
+                                 <img src="images/i3.jpg" style="width:100% ; height:320px ;" class="img-responsive" />
+                                
+                    </div> 
+                              <div class="item">
+                                 <img src="images/i4.jpg" style="width:100% ; height:320px ;" class="img-responsive" />
+                                 
+                </div>
+                              <div class="item">
+                                 <img src="images/i5.jpg" style="width:100% ; height:320px ;" class="img-responsive" />
+                                
+            </div>
+        </div> 
+    </div>
+                        
+                        </div>
+                
+            </div>
+        </div>
+    </div>  
+    
+        
+               
+
+                      
+       
+        
+               <!-- <div class="col-lg-4">
+                   <p> Music player based on Android application is popular in the market at the present. The completing development of Android operating system gives developers a nice platform, which can learn the popular computer technology combining with learned knowledge, and master the latest knowledge, enrich oneself, and enjoy entertainment 
+               </p>
+                        </div>
+                <div class="col-lg-4">
+                   <p> Music player based on Android application is popular in the market at the present. The completing development of Android operating system gives developers a nice platform, which can learn the popular computer technology combining with learned knowledge, and master the latest knowledge, enrich oneself, and enjoy entertainment 
+               </p>
+                        </div>-->
+            </div>
+         
+    <div id="c3" style="margin-top: -10px;    box-shadow:10px 10px 5px grey; border-top-width:0.5px;   "   class="well">
+       <div style=" width:100% ; "  class="row">
+           <div class="col-sm-12">
+        <h4  class="  text-center"  style="  font-weight: 600; font-size:1.2em ;color:blue ;font-family: 'Fira Sans', sans-serif;
+">Reseach Area-Complex Networks, Social Network Analysis, Linguistic Analysis, Machine Learning
+</h4>
+               </div>
+           </div>
+             </div>
+    <div style="" class=" container-fluid">
+        <div class="row">
+         <div  class="col-xs-12     "  style="  height:500px; width:98.4vw; background-image:url('images/i3.jpg');
+              background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+         -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size:100% 100%; 
+    background-size:100% 100%;"> </div>
+            </div> 
+        </div> 
+    <div  id="res"    class="container">
+        
+            <div style="background-color:#ED7458  ;height:100px;    box-shadow: 10px   5px grey; border-radius:8px; "  class="page-header text-center" >
+                <h2 id="c3" style="line-height:100px; color:#fff; ">Resume <i style="font-size:30px;"  class="fa fa-file-o"></i></h2>
+                  </div>
+            <div style="background-color:floralwhite ; border:0.5px outset #558C89 ;  box-shadow: 10px 10px 5px grey; border-radius:8px; padding:30px 30px;">
+                <div  class="row">
+                   
+                     <div id="c1" class="col-lg-12">
+                         <h3 style="text-decoration:underline;" class="text-center">  Objective</h3>
+                       <div style="font-size:18px;">A career in industry incorporating high degree of creativity and innovativeness thereby opening avenues for self-development and growth and brings out the best in me to contribute towards the organization’s goals.</div>   
+                     </div>
+                    <div class="row">
+                    <div id="c1" class="col-lg-6">
+                        
+                         <h3>Research Scholar & Pursuing Doctorate      &nbsp    <i class="fa fa-university"></i> 
+</h3>
+                    <h4>Computer Science and Engineering</h4>
+                    <h5>Indian Institute of Technology Ropar, India (from 2014)
+
+</h5>
+                        </div>
+                         <div id="c2" class="col-lg-6">
+                             <h3>IT Officer   &nbsp     <i class="fa fa-suitcase"></i>
+</h3>
+
+                    <h4>State Bank Of Patiala</h4>
+                    <h5>August 2013- July 2014</h5>
+                         </div>
+                        </div>
+                    <div class="row">
+                         <div id="c3" class="col-lg-6">
+                             <h3>Software Developer  &nbsp    <i class="fa fa-desktop"></i>
+</h3>
+                    <h4>NewGen Software Technology Ltd.</h4>
+                    <h5>July 2011- August 2013</h5>
+                         </div>
+
+  <div id="hd2" class="col-lg-6">
+      <h3>B.Tech    &nbsp     <i class="fa fa-graduation-cap"></i>
+</h3>
+                    <h4>Computer Science and Engineering</h4>
+                    <h5>Institute of Engineering and Technology Lucknow, India (2007-2011)</h5>
+
+  </div>
+                         
+ <div id="c1" class="row">
+     <div class="col-lg-4 text-center  ">
+         <br />
+         <p style="font-size:20px;" >Founder Of <a href="https://rightapprise.github.io/index.html">RightAprrise Community.</a></p>
+     </div>
+ </div>
+     <div id="c2" class="row" >
+         <div style="font-size:26px; text-decoration:underline;" class="col-lg-12 text-center">
+             Activities
+         </div>
+     </div>  
+                        <div class="row">
+                            <div id="c3" class="col-lg-12 text-center">
+                                <h3 style="font-size:20px;">Blogging:  <a style="font-size:15px;"  >https://akratisaxena.wordpress.com/</a> 
+                                <h3 style="font-size:20px;">I am actively part of the following groups:</h3>
+                                <h4>Mathematics club at IIT Ropar</h4>
+                                <h4>Literary Club at IIT Ropar</h4>
+                                <h4>Hindi Group at IIT Ropar</h4>
+                            </div>
+                        </div>                 
+ </div>
+
+
+
+                    </div>
+                     
+                
+                </div>
+              
+               
+
+
+
+            
+    </div>
+      <hr />
+    <div style="" class=" container-fluid">
+        <div class="row">
+         <div  class="col-xs-12     "  style="  height:500px; width:100%; background-image:url('images/i1.jpg');
+               
+        background-repeat:no-repeat;
+      
+        -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size:100% 100%;
+    background-size:100% 100%;
+        background-attachment:fixed;"  > </div>
+            </div>
+        </div>
+    <div id="About" style="margin-top:-20px ; border:20px ;  "   class="container">
+        
+        <div style="background-color:#558C89
+;height:100px; box-shadow: 10px 10px 5px grey; border-radius:8px;  "  class="page-header text-center" >
+                <h2 id="c3" style="line-height:100px; color:white; ">Publications  <i class="fa fa-file-text"></i></h2>
+                   
+
+                  </div>
+        <div  style="background-color:#F5F3EE
+
+; border:0.5px outset #D2FDFF ;  box-shadow: 10px 10px 5px grey; border-radius:8px; padding:30px 30px;">
+        <div style="margin-top:-20px ;">
+       <div id="c2">
+            <h3 style="font-family:Minion Pro;">To Be Submitted</h3>
+            <div style="font-family:inherit; " class="row">
+                <h4   class="col-lg-12">
+                    <ul  >
+                        <li>Saxena, Akrati, and S. R. S. Iyengar. Estimate the Coreness Rank in Complex Networks.</li>
+                        <li>Saxena, Akrati, Jaspal Singh Saini, and S. R. S. Iyengar. Social Network Analysis of the Caste-Based Reservation System in India.
+</li> 
+                        <li>Chakraborty, Tanmoy, Ralucca Gera, Ryan Miller, and Akrati Saxena. Discovering and leveraging communities in dark multi-layered networks for network disruption.
+</li>
+                    </ul>
+                        </h4>
+                <!--<div class="col-lg-4">
+                   <p> Music player based on Android application is popular in the market at the present. The completing development of Android operating system gives developers a nice platform, which can learn the popular computer technology combining with learned knowledge, and master the latest knowledge, enrich oneself, and enjoy entertainment 
+               </p>
+                        </div>-->
+                 
+            </div>
+           </div>
+            <div id="c1">
+            <h3 style="font-family:'Minion Pro';">Under Review</h3>
+            <div class="row">
+                <h4  class="col-lg-12">
+                    <ul  >
+                        <li>Saxena, Akrati, Ralucca Gera, and S. R. S. Iyengar. Degree Rank Estimation in Complex Networks. SNAM Journal
+</li>
+                        <li> Saxena, Akrati, Ralucca Gera, and S. R. S. Iyengar. Heuristic Approach to Estimate Closeness Rank using its Structural Behavior. SNAM Journal
+
+</li> 
+                         
+                    </ul>
+                        </h4>
+                <!--<div class="col-lg-4">
+                   <p> Music player based on Android application is popular in the market at the present. The completing development of Android operating system gives developers a nice platform, which can learn the popular computer technology combining with learned knowledge, and master the latest knowledge, enrich oneself, and enjoy entertainment 
+               </p>
+                        </div>-->
+                 
+            </div>
+                </div>
+            <div id="c3">
+            <h3 style="font-family:'Minion Pro';">Conferences</h3>
+            <div class="row">
+                <h4 class="col-lg-12">
+                    <ul  >
+                        <li>Saxena, Akrati, and S. R. S. Iyengar. “Global Rank Estimation in Complex Networks.” ICDCN 2018
+
+</li>
+                        <li> SSaxena, Akrati, Ralucca Gera, and S. R. S. Iyengar. “Fast Estimation of Closeness Centrality Ranking.” Advances in Social Networks Analysis and Mining (ASONAM) (2017)
+
+</li> 
+                        <li>Saxena, Akrati, Ralucca Gera, and S. R. S. Iyengar. “Observe Locally Rank Globally.” Advances in Social Networks Analysis and Mining (ASONAM) (2017)
+</li>
+                        <li>Gera, Ralucca, Ryan Miller, Miguel Miranda Lopez, Akrati Saxena, and Scott Warnke. "Three is the answer: combining relationships to analyze multilayered terrorist networks." Advances in Social Networks Analysis and Mining (ASONAM) (2017).
+</li>
+                        <li>Adeniji, Oludare, David S. Cohick, Victor G. Castro, Ralucca Gera, and Akrati Saxena. "A Generative Model for the Layers of Terrorist Networks." Advances in Social Networks Analysis and Mining (ASONAM) (2017).</li>
+                     <li>Saxena, Akrati, and S. R. S. Iyengar. "Evolving Models for Meso-Scale Structures." Comsnets 2016
+</li>  
+                        <li>Saxena, Akrati, Vaibhav Malik, and S. R. S. Iyengar. “Estimating the Degree Centrality Ranking.” Comsnets 2016
+</li>  
+                        <li>Saxena, Akrati, Yayati Gupta, Debarati Das, and S. R. S. Iyengar. “Modeling Memetics using Edge Diversity.” Complenet 2016
+</li>
+                        <li>Saxena, Akrati, Yayati Gupta, and S. R. S. Iyengar. “Understanding Spreading Patterns on Social Networks Based on Network Topology.” Asonam 2015
+</li>
+                    </ul>
+
+                        </h4>
+                <!--<div class="col-lg-4">
+                   <p> Music player based on Android application is popular in the market at the present. The completing development of Android operating system gives developers a nice platform, which can learn the popular computer technology combining with learned knowledge, and master the latest knowledge, enrich oneself, and enjoy entertainment 
+               </p>
+                        </div>-->
+                 
+            </div>
+                </div>
+               <div id="c3">
+                        <h3  style="font-family:Minion Pro;" >Technical Reports</h3>
+            <div class="row">
+                <h4 class="col-lg-12">
+                    <ul  >
+                        <li>Saxena, Akrati, Vaibhav Malik, and S. R. S. Iyengar. "Estimating the Degree Centrality Ranking of a Node." arXiv preprint arXiv:1511.05732 (2015).
+
+</li>
+                        <li> Saxena, Akrati, Vaibhav Malik, and S. R. S. Iyengar. "Rank me thou shalln't Compare me." arXiv preprint arXiv:1511.09050 (2015).
+
+
+</li> 
+                        <li>Saxena, Akrati, et al. "Modeling Memetics using Edge Diversity." arXiv preprint arXiv:1505.00457 (2015).
+</li>
+                         
+                    </ul>
+                        </h4>
+                <!--<div class="col-lg-4">
+                   <p> Music player based on Android application is popular in the market at the present. The completing development of Android operating system gives developers a nice platform, which can learn the popular computer technology combining with learned knowledge, and master the latest knowledge, enrich oneself, and enjoy entertainment 
+               </p>
+                        </div>-->
+                 
+            </div>
+                    </div>
+       
+    </div>
+        </div>
+        </div>
+    <hr />
+    <div style="" class=" container-fluid">
+        <div class="row">
+         <div  class="col-xs-12     "  style="  height:500px; width:100%; background-image:url('images/rrr.jpg');
+               
+        background-repeat:no-repeat;
+      
+        -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size:100% 100%;
+    background-size:100% 100%;
+        background-attachment:fixed;"  > </div>
+            </div>
+        </div>
+    <div  id="feat"    class="container">
+        
+            <div style="background-color:#ED7458  ;height:100px;    box-shadow: 10px   5px grey; border-radius:8px; "  class="page-header text-center" >
+                <h2 id="hd2" style="line-height:100px; color:#fff; "> Projects <i style="font-size:30px;" class="fa fa-pencil-square-o"></i></h2>
+                  </div>
+            <div style="background-color:#E5E5E5  ; border:0.5px outset #558C89 ;  box-shadow: 10px 10px 5px grey; border-radius:8px; padding:30px 30px;">
+                <div  class="row">
+                    <div id="c1" class="col-lg-12">
+                        <h3><i class="fa fa-pencil-square-o"></i>&nbsp Modeling the Memetics using Edge Diversity:</h3>
+                        <p> In this project, we study how does a meme spread on the network. Based on the in-depth analysis of real world datasets,
+                             we observe that the central people called core nodes play an important role to make a meme viral in the network.
+                             We further study how the memes are spread over communities and analysis shows that once the information hits the central nodes
+                             it takes no time to spread in multiple communities. We propose a spreading model based on the spreading power of different kind 
+                            of edges that is directly related to their structural position in the network. The proposed methodologies are verified
+                             using the Twitter dataset of Higgs-Boson meme. The research papers related to this project are published in Asonam 2015 and Complenet 2016.
+                            </p>
+                    </div>
+                     
+                </div>
+                <div class="row">
+                    <div id="c2" class="col-lg-12">
+                        <h3><i class="fa fa-pencil-square-o"></i>&nbsp Predict the global rank of a node using its local information:</h3>
+                        <p>With time, the size of complex networks is increasing very fast. It is not feasible to collect the entire network at any given time to study its characteristics. This creates the need to propose local algorithms to study various global properties of the network. In this project, we estimate the global rank of a node using its local information. In first work, we have proposed four methods to estimate degree rank of a node without having the entire network (The research papers related to this project are published in Comsnets 2016 and accepted in Asonam 2017). Next, we focus on the closeness centrality of the node that denotes the reachability of the network from the given node. We propose a fast heuristic method to estimate the closeness rank of a node based on the structural properties of real world networks. The time complexity to estimate the closeness rank of a node is same as to compute its closeness centrality (This work is accepted in Asonam 2017). We are further working to estimate global rank of the nodes based on other 
+                            centrality measures like betweenness centrality, PageRank, coreness, and so on. My Ph.D. thesis is based on the proposed project.</p>
+                     </div>
+                      
+                </div>
+                <div class="row">
+                    <div id="c3" class="col-lg-12">
+                        <h3><i class="fa fa-pencil-square-o"></i>&nbsp Social Network Analysis of the Caste-Based Reservation System in India:</h3>
+                        Being as old as the human civilisation, discrimination based on various grounds as race, creed, gender, and caste is prevailing in the world from a long time. To undo the impact of this long enduring historical discrimination, governments worldwide have adopted various forms of affirmative action; such as positive discrimination, employment equity, and quota system. Locally known as “Reservation” policy, affirmative action in India is one of the world's oldest and most complex affirmative policy. Although being one of the most controversial and frequently debated issues, the reservation system in India lacks a rigorous scientific study and analysis. In this paper, we discuss the dynamics of the reservation system based on the cultural divide among Indian population using social network analysis. The mathematical model, using Erdos-Renyi network, shows that the addition of weak ties between the two components leads to a logarithmic reduction in the social distance. Our experimental simulations establish the claim for the different clans of frequently studied social network models as well as real world networks. We further show that a small number of links 
+                        created by the process of reservation are adequate for a society to live in harmony. (This work is ready to be submitted.)
+                     </div>
+                      
+                </div>
+              
+             <div class="row">
+                    <div id="c2" class="col-lg-12">
+                        <h3><i class="fa fa-pencil-square-o"></i>&nbsp Coreness Approximation using Local Information:</h3>
+                       Coreness is one of the important centrality measure that tells about the influential power of a node. K-shell decomposition method is a widely used method to compute the coreness of a node. In this work, we approximate the coreness of a node using local information. Next, we use the approximated 
+                        coreness value to estimate the global coreness rank of a node without having the entire network. (This project is ready to be submitted.)
+                     </div>
+                      
+                </div>
+            <div class="row">
+                    <div id="c3" class="col-lg-12">
+                        <h3> <i class="fa fa-pencil-square-o"></i>&nbsp Meso-scale structures in complex networks:</h3>
+                       This project mainly focuses on the evolution of meso-scale structures like core-periphery structure or community structure in complex networks. It is observed that real world scale-free networks possess both the community as well as the core-periphery structure that shows the modular and hierarchical organization in the given networks. First, we study how both community and core-periphery structure coexist in a network. Based on the analysis, we propose evolving models to generate synthetic weighted and unweighted scale-free networks having both meso-scale structures. This work is published in Comsnets 2016.
+
+                     </div>
+                      
+                </div>
+            <div class="row">
+                    <div id="c1" class="col-lg-12">
+                        <h3><i class="fa fa-pencil-square-o"></i>&nbsp Analysis of Dark Multi-layered Networks:</h3>
+                      In this project, we present a synthesized analysis of the terrorist network datasets through the analysis of the multiple layers of these networks. These networks show different behaviors than the scale-free real world networks (The work based on this analysis is accepted in SNAA, Asonam 2017.). The main challenges associated with these networks are incompleteness, fuzzy boundaries, and dynamic behavior. We account these characteristics and propose a method to identify knowledge sharing communities (KSC) (This work was presented in Sunbelt 2016, and It is communicated in Social Networks Journal.). Next, we propose models to generate the synthetic
+                         networks based on the existing datasets (This work is accepted in SI, Asonam 2017.).
+                     </div>
+                      
+                </div>
+                </div>
+              
+               
+
+
+
+            
+    </div>
+      <hr />
+    <div style="" class=" container-fluid">
+        <div class="row">
+         <div  class="col-xs-12     "  style="  height:500px; width:100%; background-image:url('images/i4.jpg');
+               
+        background-repeat:no-repeat;
+      
+        -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size:100% 100%;
+    background-size:100% 100%;
+        background-attachment:fixed;"  > </div>
+            </div>
+        </div>
+    <div  id="exp" style="margin-top:-20px;"  class="container">
+       
+            <div style="background-color:#433E49  ;height:100px;   box-shadow: 10px 10px 5px grey; border-radius:8px;  " class="page-header text-center" >
+                <h2 id="c3" style="line-height:100px; color:#fff ; ">Experience <i class="fa fa-briefcase"></i></h2>
+                  </div>
+            <div  style="background-color:#EEE2DC  ; border:0.5px outset #558C89 ;  box-shadow: 10px 10px 5px grey; border-radius:8px; padding:30px 30px;">
+        <h3 id="c3">Teaching Assistantships (at IIT Ropar):
+</h3>
+        <ul id="c2">
+            <li>CSL471, Introduction to Probability and Computing with Dr. S.R.S. Iyengar (Spring Semester, 2016, Indian Institute of Technology Ropar)
+</li>
+            <li>CSL343, Computer Networks with Dr. Junghyun Jun (Autumn Semester, 2017, Indian Institute of Technology Ropar)
+</li>
+            <li>CSL356, Analysis and Design of Algorithms with Dr. Junghyun Jun (Spring Semester, 2016, Indian Institute of Technology Ropar)
+</li>
+            <li>CSL343, Computer Networks with Dr. Junghyun Jun (Autumn Semester, 2016, Indian Institute of Technology Ropar)
+</li>
+            <li>CSL469, Wireless and Mobile Systems with Dr. Junghyun Jun (Spring Semester, 2015, Indian Institute of Technology Ropar)
+</li>
+            <li>CSL451, Introduction to Database Systems with Dr. Narayanan C. Krishnan (Autumn Semester, 2015, Indian Institute of Technology Ropar)
+</li>
+            <li>GEL103, Introduction to Computing with Dr. Nitin Auluck (Autumn Semester, 2015, Indian Institute of Technology Ropar)
+</li>
+            <li>CSL407, Machine Learning with Dr. Narayanan C. Krishnan (Spring Semester, 2014, Indian Institute of Technology Ropar)
+</li>
+        </ul>
+        <h3 id="c2">Research Internships:
+
+</h3>
+        <ul id="c1">
+            <li>May 2015 - July 2015, Project: Community detection in multilayer networks, under Dr. Ralucca Gera, Associate Professor, NPS, California, USA
+</li>
+            <li>September 2015 - December 2015, Project: Community detection in multilayer networks, under Dr. Ralucca Gera, Associate Professor, NPS, California, USA
+</li>
+            <li>May 2016 - July 2016, Project: Analysis of multilayered terrorist networks, under Dr. Ralucca Gera, Associate Professor, NPS, California, USA
+</li>
+            <li>April 2017 - July 2017, Project: Study the properties of dark networks and propose evolution models to generate multilayered dark networks, under Dr. Ralucca Gera, Associate Professor, NPS, California, USA
+</li>
+        </ul>
+        <h3 id="c3">Experience:
+</h3>
+        <ul id="c2">
+            <li><h4>Indian Institute of Technology Ropar, India
+</h4><p>Research Scholar | July 2014 to Till date | Punjab, India
+</p></li>
+            <li>
+                <h4>State Bank Of India
+</h4>
+                <p>IT Officer (Assistant Manager) | August 2013 to July 2014 | Patiala, Punjab, India
+</p>
+            </li>
+            <li>
+                <h4>Newgen Software Technology Ltd.
+</h4>
+                <p>Software Developer | July 2011 to August 2013 | New Delhi, India
+</p>
+            </li>
+            <li>
+                <h4>Tulip Telecom Delhi
+</h4>
+                <p>Summer Intern | May 2010 to July 2010 | New Delhi India
+</p>
+            </li>
+        </ul>
+        </div>
+         
+
+        </div>
+    <hr />
+    <div style="" class=" container-fluid">
+        <div class="row">
+         <div  class="col-xs-12     "  style="  height:500px; width:100%; background-image:url('images/i2.jpg');
+               
+        background-repeat:no-repeat;
+      
+        -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size:100% 100%;
+    background-size:100% 100%;
+        background-attachment:fixed;"  > </div>
+            </div>
+        </div>
+    <div  id="ach"    class="container">
+        
+            <div style="background-color:#ED7458  ;height:100px;    box-shadow: 10px   5px grey; border-radius:8px; "  class="page-header text-center" >
+                <h2 id="c3" style="line-height:100px; color:#fff; ">Achievments <i class="fa fa-trophy"></i>  </h2>
+                  </div>
+            <div style="background-color:#E5E5E5  ; border:0.5px outset #558C89 ;  box-shadow: 10px 10px 5px grey; border-radius:8px; padding:30px 30px;">
+                <div  class="row">
+                    <div style="font-size: 23px;" class="col-lg-12">
+                        <h4 id="c2" style="font-family:  Georgia; "><i class="fa fa-trophy"></i>&nbsp Won second prize in TEQIP- II 2014 poster presentation held at PEC Chandigarh.</h4>
+                        <h4 id="c2"  style="font-family:  Georgia ; "><i class="fa fa-trophy"></i>&nbsp Won First runner-up Best presenter Award for "Estimating the Degree Centrality Ranking" talk in Grad Forum, Comsnets 2016.
+</h4>
+                        <h4 id="c2"  style="font-family:  'Georgia'; "><i class="fa fa-trophy"></i>&nbsp Qualified “Sun Certified Java Programmer” (SCJP 1.6) certification exam with 83% conducted by ORACLE.
+</h4>
+                        <h4 id="c2"  style="font-family: Georgia  ; "><i class="fa fa-trophy"></i>&nbsp School Topper from 1st class to Higher Secondary (12th).
+
+</h4>
+                        <h4 id="c2"  style="font-family: Georgia  ; "><i class="fa fa-trophy"></i>&nbsp I won prizes in B-Plan, Programming challenges and Photoshop contest in Encore IET Lucknow.
+
+
+</h4>
+
+                        
+                    </div>
+                     
+                </div>
+                
+                </div>
+              
+               
+
+
+
+            
+    </div>
+      <hr />
+    <div style="" class=" container-fluid">
+        <div class="row">
+         <div  class="col-xs-12     "  style="  height:500px; width:100%; background-image:url('images/i5.jpg');
+               
+        background-repeat:no-repeat;
+      
+        -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size:100% 100%;
+    background-size:100% 100%;
+        background-attachment:fixed;"  > </div>
+            </div>
+        </div>
+   <div  id="cont" style="font-family: 'Alegreya Sans', sans-serif; "  class="container">
+        
+            <div style="background-color:#ED7458  ;height:100px;    box-shadow: 10px   5px grey; border-radius:8px; "  class="page-header text-center" >
+                <h2 id="c3"  style="line-height:100px; color:#fff; ">Contact  <i class="fa fa-rss-square"></i>  </h2>
+                  </div>
+            <div style="background-color:#1fa67a  ; border:0.5px outset #558C89 ;  box-shadow: 10px 10px 5px grey; border-radius:8px; padding:30px 30px;">
+                <div  class="row">
+                    <div style="font-size:15px  ;" class="col-lg-4 text-center">
+                        <h4 id="c1"  style="  color:  #fff; "><i class="fa fa-trophy"></i> Akrati Saxena
+Research Scholar. <br />
+                            Department of Computer Science & Engineering
+Indian Institute of Technology Ropar
+Rupnagar - 140001, Punjab 
+INDIA 
+                        </h4>
+                      
+                        
+
+ 
+</div>
+                     <div style="font-size:15px  ;      font-family: 'Alegreya Sans', sans-serif;
+" class="col-lg-4 text-center">
+                        <h4 id="c2"  style="  color:  #fff;">  Connect On Social Media  <br />
+                            <br />
+                            <i style=" font-size:35px  ;" class="fa fa-twitter-square"></i> &nbsp
+        <i style=" font-size:35px  ;" class="fa fa-google-plus-square"></i> &nbsp <i style=" font-size:35px  ;" class="fa fa-linkedin-square"></i>
+ 
+                        </h4>
+                      
+
+ 
+</div>
+                    <div id="c3" style="font-size:12px  ;  " class="col-xs-4   ">
+                        <br />
+                        <h4 style="font-family: ; "> <a style=" color:  #fff;"><i class="fa fa-envelope"></i>&nbsp akrati.saxena@iitrpr.ac.in</a>    <br />
+                           
+                             </h4>
+                         <h4 style="  "> <a style=" color:  #fff;"><i class="fa fa-globe"></i>&nbsp akartsaxena.wordpress.com</a>    <br />
+                           
+                             </h4>
+                        
+                        
+                        
+
+ 
+</div>
+                        
+                    </div>
+                     
+                </div>
+                
+                </div>
+              
+               
+
+
+
+            
+<hr />
+    
+              <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="Scripts/scrollreveal.min.js"></script>
+    <script src="Scripts/scrollreveal.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add scrollspy to <body>
+            $('body').scrollspy({ target: ".navbar", offset: 50 });
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#mn a").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 4000, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                }  // End if
+            });
+        });
+</script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.fadeInLeft', {
+            viewFactor: 0.4
+        });
+        sr.reveal('.fadeInRight', {
+           
+            viewFactor: 0.5
+
+        });
+        sr.reveal('#c1', {
+            duration: 3000,
+            origin: 'left',
+             
+            distance: '25px',
+            viewFactor: 0.2
+        });
+        sr.reveal('#c2', {
+            duration: 2000,
+            origin: 'right',
+             
+            distance: '25px',
+            viewFactor: 0.2
+
+        });
+        sr.reveal('#c3', {
+            duration: 1000,
+            origin: 'bottom',
+            
+            distance: '25px',
+            viewFactor: 0.2
+
+        });
+
+
+
+    </script>  
+     <script>
+
+         window.addEventListener("load", function () {
+             document.getElementById("overlay").style.display = 'none';
+         })
+</script>
+           <script src="Scripts/css3-animate-it.js"></script>
+
+</body>
+</html>
