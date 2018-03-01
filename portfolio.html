@@ -14,6 +14,37 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <style>
+	    .spinner{
+	width: 80px;
+	height: 80px;
+    border: 2px  solid #f3f3f3;
+	border-top:2px solid #f25a41;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	animation: spin 1s infinite linear;
+}
+@keyframes spin{
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+        #overlay{
+ height: 100%;
+ width: 100%;
+background:rgba(0,0,0,.8);
+opacity:5;
+ position: fixed;
+ left: 0;
+ right: 0;
+}
         html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
