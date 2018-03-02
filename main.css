@@ -1,0 +1,83 @@
+﻿  
+      
+ #hd{
+     margin-top:-10px; 
+ }
+ #Home{
+     background-color:#3366FF; margin-top:20px  
+ }
+ #img{
+     width:168px; 
+      border:4px outset white; 
+       height:160px; 
+ }
+ #achv{
+     background-color:#aa863a
+ ;
+      font-family: 'Fira Sans', sans-serif;
+     height:100px;
+         box-shadow: 10px   5px grey;
+          border-radius:8px; 
+          margin-top:10px ; 
+ }
+  h4{font-family: 'Alegreya Sans', sans-serif; font-family: 'Fira Sans', sans-serif;
+      font-size:1.2em ;
+  }
+  h5{
+     font-family: 'Alegreya Sans', sans-serif;
+      font-size:1.2em ;
+  }
+ #prs{
+    background-color:#b0aac2
+ ; 
+      font-family: 'Fira Sans', sans-serif;
+     height:100px;
+         box-shadow: 10px   5px grey;
+          border-radius:8px; 
+          margin-top:10px ; 
+ }
+    p{
+     font-family: 'Alegreya Sans', sans-serif;
+      font-size:1.2em ;
+ }
+ #pub{
+     background-color:#558C89
+
+;height:100px; box-shadow: 10px 10px 5px grey;
+ font-family: 'Fira Sans', sans-serif; border-radius:8px;  
+ }
+ #proj{
+     font-family: 'Fira Sans', sans-serif;
+ }
+ #exp{
+     font-family: 'Fira Sans', sans-serif;
+ }
+ #txt1{
+     margin-top:60px ;
+      font-family: 'Fira Sans', sans-serif;
+ font-weight: 500;  
+ font-size:1.4em; color:#fff;
+ }
+ #txt2{
+      font-family: 'Fira Sans', sans-serif;
+       line-height:50px;
+   color:blue;
+ font-weight: 600; 
+ -webkit-font-smoothing: subpixel-antialiased;  
+ 
+ }
+ #pub1{
+
+ }
+ #link{
+     color:darkgreen;
+      font-size:1em; 
+      text-decoration:underline ;
+font-family: 'Fira Sans', sans-serif;
+         text-decoration:underline;
+ }
+ #txt{
+     height:50px; 
+      font-size:1.2em; 
+       background-color:whitesmoke;
+ }
