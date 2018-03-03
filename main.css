@@ -5,8 +5,9 @@
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
-#nv
+nav
 {
+   font-family: 'Fira Sans', sans-serif;  
     font-size: 1.2em;
     z-index: 99;
     opacity: 0.94;
