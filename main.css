@@ -1,169 +1,385 @@
 ﻿  
-   html, html a {
+  html, html a
+{
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
-    .navbar-right .navbar-nav li a:hover{
-             color:blue;
-             border-radius:5px;
-             background-color:whitesmoke;
-         }   
- #hd{
-     margin-top:-10px; 
- }
- #Home{
-     background-color:#3366FF; margin-top:20px  
- }
- #img{
-     width:168px; 
-      border:4px outset white; 
-       height:160px; 
- }
- #achv{
-     background-color:#aa863a
- ;
-      font-family: 'Fira Sans', sans-serif;
-     height:100px;
-         box-shadow: 10px   5px grey;
-          border-radius:8px; 
-          margin-top:10px ; 
- }
-    .hdFont
-            {
-                font-family: 'Fira Sans', sans-serif;
-            }
 
-            .bdFont
-            {
-                font-family: 'Alegreya Sans', sans-serif;
-            }
+nav
+{
+    font-size: 1.2em;
+    z-index: 99;
+    opacity: 0.94;
+}
 
-             
-            .spinner
-            {
-                width: 80px;
-                height: 80px;
-                border: 2px solid #f3f3f3;
-                border-top: 2px solid #f25a41;
-                border-radius: 100%;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                animation: spin 1s infinite linear;
-            }
+.navbar-right .navbar-nav li a:hover
+{
+    color: blue;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
 
-            @keyframes spin
-            {
-                from
-                {
-                    transform: rotate(0deg);
-                }
+#image1
+{
+    height: 500px;
+    width: 98.4vw;
+    background-image: url('images/i3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
 
-                to
-                {
-                    transform: rotate(360deg);
-                }
-            }
+#image2
+{
+    height: 500px;
+    width: 100%;
+    background-image: url('images/i1.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
-             
+#image3
+{
+    height: 500px;
+    width: 100%;
+    background-image: url('images/rrr.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
-            #overlay
-            {
-                height: 100%;
-                width: 100%;
-                background: rgba(0,0,0,.8);
-                opacity: 5;
-                position: fixed;
-                left: 0;
-                right: 0;
-            }
+#image4
+{
+    height: 500px;
+    width: 100%;
+    background-image: url('images/i4.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
-            body
-            {
-                position: relative;
-             }
+#image5
+{
+    height: 500px;
+    width: 100%;
+    background-image: url('images/i2.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
-            .backgroundImage1
-            {
-                width: 100%;
-                height: 320px;
-                border: 3px inset lightgreen;
-                border-radius: 8px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                position: relative;
-                background-position: center;
-                overflow: hidden;
-            }
+#image6
+{
+    height: 500px;
+    width: 100%;
+    background-image: url(images/imag.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
+#image7
+{
+    height: 500px;
+    width: 100%;
+    background-image: url('images/i5.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
+#intro
+{
+    background-color: floralwhite;
+    box-shadow: 10px 10px 5px grey;
+    font-weight: 500;
+    border-radius: 6px;
+    -moz-osx-font-smoothing: grayscale;
+}
 
- h3{
-      font-family: 'Fira Sans', sans-serif;
-       font-size:1.4em ;
- }
-  h4{ 
-      font-family: 'Alegreya Sans', sans-serif;
-      font-size:1.2em ;
-  }
-  h5{
-     font-family: 'Alegreya Sans', sans-serif;
-      font-size:1.2em ;
-  }
- #prs{
-    background-color:#b0aac2
- ; 
-      font-family: 'Fira Sans', sans-serif;
-     height:100px;
-         box-shadow: 10px   5px grey;
-          border-radius:8px; 
-          margin-top:10px ; 
- }
-    p{
-     font-family: 'Alegreya Sans', sans-serif;
-      font-size:1.2em ;
- }
- #pub{
-     background-color:#558C89
+#research
+{
+    font-weight: 600;
+    font-size: 1.2em;
+    color: blue;
+    font-family: 'Fira Sans', sans-serif;
+}
 
-;height:100px; box-shadow: 10px 10px 5px grey;
- font-family: 'Fira Sans', sans-serif; border-radius:8px;  
- }
- #proj{
-     font-family: 'Fira Sans', sans-serif;
- }
- #exp{
-     font-family: 'Fira Sans', sans-serif;
- }
- #txt1{
-     margin-top:60px ;
-      font-family: 'Fira Sans', sans-serif;
- font-weight: 500;  
- font-size:1.4em; color:#fff;
- }
- #txt2{
-      font-family: 'Fira Sans', sans-serif;
-       line-height:50px;
-   color:blue;
- font-weight: 600; 
- -webkit-font-smoothing: subpixel-antialiased;  
+#Resume
+{
+    background-image: url(images/frm.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Publication
+{
+    background-image: url( images/frame5.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#hd
+{
+    margin-top: -10px;
+}
+
+#Home
+{
+    background-color: #3366FF;
+    margin-top: 20px;
+}
+
+#img
+{
+    width: 168px;
+    border: 4px outset white;
+    height: 160px;
+}
+
+#Project
+{
+    background-image: url(images/frm3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Experience
+{
+    background-image: url(images/fmm4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Achievment
+{
+    background-image: url(images/leaf2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Presen
+{
+    background-image: url( images/bann.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Contact
+{
+    background-image: url( images/baa.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
  
- }
- #pub1{
+#achv
+{
+    background-color: #aa863a;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100px;
+    box-shadow: 10px 5px grey;
+    border-radius: 8px;
+    margin-top: 10px;
+}
 
- }
- #link{
-     color:darkgreen;
-      font-size:1em; 
-      text-decoration:underline ;
-font-family: 'Fira Sans', sans-serif;
-         text-decoration:underline;
- }
- #txt{
-     height:50px; 
-      font-size:1.2em; 
-       background-color:whitesmoke;
- }
+.hdFont
+{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.bdFont
+{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+.spinner
+{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #f25a41;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#overlay
+{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    opacity: 5;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+body
+{
+    position: relative;
+}
+
+.backgroundImage1
+{
+    width: 100%;
+    height: 320px;
+    border: 3px inset lightgreen;
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+
+h3
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.4em;
+}
+
+h4
+{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+h5
+{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+#prs
+{
+    background-color: #b0aac2;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100px;
+    box-shadow: 10px 5px grey;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+p
+{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+#pub
+{
+    background-color: #558C89;
+    height: 100px;
+    box-shadow: 10px 10px 5px grey;
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 8px;
+}
+
+#proj
+{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#exp
+{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#txt1
+{
+    margin-top: 60px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+#txt2
+{
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 50px;
+    color: blue;
+    font-weight: 600;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#pub1
+{
+}
+
+#link
+{
+    color: darkgreen;
+    font-size: 1em;
+    text-decoration: underline;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: underline;
+}
+
+#txt
+{
+    height: 50px;
+    font-size: 1.2em;
+    background-color: whitesmoke;
+}
