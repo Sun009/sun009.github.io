@@ -1,0 +1,62 @@
+﻿ .upload-btn-wrapper
+        {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #backgroundImg{
+            background-image:url(img/balloon-3206530.jpg);
+             height:660px; 
+             background-repeat:no-repeat;
+             background-size:100% 100%;
+        }
+        nav
+        {
+            font-family: 'Alegreya Sans', sans-serif;
+        }
+
+        #text
+        {
+            font-family: 'Fira Sans', sans-serif;
+            color: white;
+            font-size: 2.3em;
+        }
+
+        #text2
+        {
+            font-family: 'Fira Sans', sans-serif;
+            color: white;
+            font-size: 1.2em;
+        }
+         
+
+        .btn
+        {
+            border: 2px solid white;
+            color: white;
+            background-color: transparent;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .upload-btn-wrapper input[type=file]
+        {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        #enhance
+        {
+            display: none;
+        }
+
+        #download
+        {
+            display: none;
+        }
