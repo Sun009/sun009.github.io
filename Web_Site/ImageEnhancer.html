@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+          <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1"> 
 <link href="css/animations.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="css/bootstrap.theme.min.css" type="text/css" />
@@ -35,15 +36,15 @@ body{
 
 <!--    -----------------Navigation Bar------------------->
 
-    <nav id="mainnavBar" style="display:block; color:white;background-color:transparent; color:white; font-size:1.3em;" class="mynavBar navbar navbar-default  navbar-fixed-top" ; >
+    <nav  style="display:block; color:white;background-color:transparent; color:white; font-size:1.3em;" class="mynavBar navbar navbar-default  navbar-fixed-top" ; >
        <div class="container">
          <div class="navbar-header">
              <div class="navbar-brand">
-                 <div style="display:block; position">
+                 <div style="display:block;  ">
                  <img src="img/logo3.png" style="margin-top:-15px;" class="img-responsive" />
                      </div>
              </div>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mn" >
+        <button type="button" class="navbar-toggle" style="background-color:white;"  data-toggle="collapse" data-target="#mn" >
             <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -54,11 +55,17 @@ body{
             
         <div   class="collapse navbar-collapse navbar-right" id="mn">
             <ul class="nav navbar-nav text-center">
-                <li   data-toggle="collapse"  class="active"  ><a style="color:white;" class="active"  href="#Home">Home </a> 
-                 <li   data-toggle="collapse"  ><a style="color:white;"  href="#About">About </a>         
+                <li   data-toggle="collapse"  class="active"  >
+                    <a href="#Home" style="color:white;" class="hidden-xs">Home</a>
+                    <a style="color:white;" class="active  visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#Home">Home </a> 
+                 <li   data-toggle="collapse">
+                     <a href="#About" style="color:white;" class="hidden-xs">About</a>
+                     <a style="color:white;" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse"  href="#About">About </a>         
 </li>
                
-                <li  data-toggle="collapse"     ><a style="color:white;" href="#steps" >Steps to enhance</a></li>
+                <li  data-toggle="collapse">
+                    <a href="#steps" style="color:white;" class="hidden-xs">Steps to enhance</a>
+                    <a style="color:white;" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" href="#steps" >Steps to enhance</a></li>
  
                                 
 
@@ -74,7 +81,7 @@ body{
                 <div class="col-xs-2">
                 </div>
                 <div class="col-xs-8"   style="  height:400px">
-<!--    -----------------Image Preview Section------------------->
+<!--    -----------------Image Preview Section-------------------> 
                           
                 <div class=" text-center   animatedParent" id="ImagePreview">
                  <p style="margin-top:200px" class="animated fadeInUp delay-400  "  id="text">Beautify your beautiful captured memories</p>
@@ -114,8 +121,12 @@ body{
 
 <!--    -----------------Image Download Button------------------->
                              
-                            <div class="upload-btn-wrapper">
-  <button id="download" style="cursor:pointer" class="btn">Download Ur Pic.</button>
+                            <div style="display:inline-block " class="upload-btn-wrapper">
+  <button id="download" style="cursor:pointer" class="btn">Download</button>
+   
+</div>
+                              <div style="display:inline-block " class="upload-btn-wrapper">
+  <button id="StartNew" style="cursor:pointer" class="btn">Once More</button>
    
 </div>
 
@@ -135,7 +146,7 @@ body{
       </div>
         
              <div class="col-md-5 animatedParent">
-                  <img src="img/kkkj.jpg" class="img-responsive animated fadeInLeft delay-1000" style="  margin:  10px  0px;  " />
+                  <img src="img/kkkj.jpg" class="img-responsive animated fadeInLeft delay-1000" style="border-radius:8px; box-shadow: 5px 5px 16px #8D8741; margin:  10px  0px;  " />
 
              </div>
             <div class="col-md-7 animatedParent">
@@ -180,17 +191,17 @@ body{
  
 
          </div>
-             <div class="col-md-5">
-                  <img src="img/beach-1867285.jpg" class="img-responsive" style="  margin:  10px  0px;  " />
+             <div class="col-md-5 animatedParent">
+                  <img src="img/face-2936245.jpg" class="img-responsive animated    fadeInLeft delay-500" style=" border-radius:8px; box-shadow: 5px 5px 16px #4C495D; margin:  10px  0px;  " />
 
              </div>
                          
         </div>
  
-  
-    <script src="js/jqery.min.js"></script>
-	 <script src="js/bootstrap.min.js"></script>
-
+              <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     <script>
 
         function preview(input) {
@@ -216,14 +227,19 @@ body{
                 $("#upd").hide();
                 $("#enhance").hide();
                 $("#download").show();
+                $("#StartNew").show();
 
 
             });
+            $("#StartNew").click(function () {
+                location.reload(true);
+            });
+            
 
         });
         $(document).ready(function () {
             // Add scrollspy to <body>
-            $('body').scrollspy({ target: ".navbar", offset: 10 });
+            $('body').scrollspy({ target: ".navbar", offset: 50 });
 
             // Add smooth scrolling on all links inside the navbar
             $("#mn a").on('click', function (event) {
@@ -249,8 +265,7 @@ body{
         });
 </script>
     
-     <script src="js/css3-animate-it.js"></script>
-     
+      
     
 </body>
 </html>
